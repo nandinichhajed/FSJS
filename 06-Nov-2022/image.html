@@ -7,6 +7,21 @@
     <title>Image</title>
 </head>
 <body>
-    
+    <img src="./img/one.jpg" alt="Nature Image" usemap="#image-map">
+
+    <map name="image-map">
+        <area target="" alt="" onclick="myfunone()" title="" href="" coords="3970,1163,4955,2384" shape="rect">
+        <area target="" alt="" onclick="myfuntwo()" title="" href="" coords="584,1336,1546,2514" shape="rect">
+    </map>
+
+    <script>
+        function myfunone() {
+            alert("you clicked one")
+        }
+
+        function myfuntwo(){
+            alert("you clicked two")
+        }
+    </script>
 </body>
 </html>
