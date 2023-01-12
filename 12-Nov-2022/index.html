@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /* universal selector */
+    /* selects everything */
+
+    *{
+        background-color: #4d4d4d;
+    }
+
+    /* individual selector */
+    /* selects an individual tag */
+
+    p{
+        background-color: #d1ea76;
+    }
+
+    /* class and id selector */
+    /* . is for class | # is for id */
+    .warning {
+        background-color: #ef9323;
+    }
+
+    #danger {
+        background-color: #e93916;
+        color: antiquewhite;
+    }
+
+    /* and selectors (chined) */
+    /* chaning the element */
+    li.bg-black.text-white{
+        background-color: #000;
+        color: aliceblue;
+    }
+
+    /* combined selectors */
+    /* selecting two or more items together and applying properties on them */
+    li, span {
+        background-color: burlywood;
+    }
+    
+    /* inside element */
+    /* inside of an element */
+    div ul li{
+        background-color: #4b35f1;
+    }
+    
+    /* Direct child */
+    div>li {
+        background-color: #7667e4;
+    }
+
+    /* siblings ~ or + */
+    .sibling + p {
+        background-color: pink;
+    }
+</style>
+<body>
+    <div>Welcome to live class</div>
+    <span>span is just a span, nothing more</span>
+    <p>we all know paragraphs</p>
+    <ul>
+        <li class="bg-black text-white">item 1</li>
+        <li class="bg-black">item 2</li>
+        <li>item 3</li>
+        <li>item 4</li>
+        <li>item 5</li>
+    </ul>
+
+    <div>
+        <li>awesome</li>
+        <ul>
+            <li>highlight me</li>
+            <li>highlight me</li>
+        </ul>
+    </div>
+
+    <Section>
+        <p>Test 1</p>
+        <p class="sibling">Test 2</p>
+        <p>Test 3</p>
+        <p class="warning">Test 4</p>
+        <p id="danger">Test 5</p>
+        <p>Test 6</p>
+    </Section>
+
+</body>
+</html>
