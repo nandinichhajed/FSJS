@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /* link, visited, hover */
+    a:link{
+        color: black;
+    }
+    a:visited{
+        color: #B4161B;
+    }
+    a:hover{
+        color: #6EC72D;
+    }
+
+    /* focus */
+    input:focus{
+        background-color: #758283;
+        color: #fff;
+    }
+
+    /* :nth-child() */
+    li:nth-child(even){
+        background-color: #6EC72D;
+    }
+
+    li:first-child{
+        background-color: #B4161B;
+    }
+
+    li:last-child{
+        background-color: aqua;
+        border: #120E43 3px solid;
+    }
+    
+</style>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <a href="http://google.com">Google</a> 
+
+    <form action="">
+        <label for="name">Name:</label>
+        <input type="text">
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="">
+    </form>
+
+    <ul>
+        <li>One</li>
+        <li>Two</li>
+        <li>Three</li>
+        <li style="background-color: #758283;">Four</li>
+        <li>Five</li>
+        <li>Six</li>
+        <li>Sven</li>
+        <li>Eight</li>
+        <li>Nine</li>
+        <li>Ten</li>
+    </ul>
+
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+    </ul>
+</body>
+</html>
