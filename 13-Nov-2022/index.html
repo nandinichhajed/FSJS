@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: #414141;
+        color: #fff;
+    }
+
+    /* before psudo selector */
+        .imp-label:hover::before{
+            content: '';
+            display: block;
+            width: 20px;
+            height: 20px;
+            border-radius: 10px;
+            background-color: orange;
+        }
+
+    /* after psudo selector */
+        .imp-imp-label::after{
+            content: '';
+            display: inline-block;
+            text-align: center;
+            width: 20px;
+            height: 20px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            background-color: orange;
+        }
+
+    /* :hover */
+        .email:hover{
+            background-color: green;
+            padding: 5px;
+        }
+    
+    /* customizing button */
+        .btn-primary{
+            background-color: #383cc1;
+            color: #fff;
+            padding: 5px 20px 5px 20px;
+            border: 1px solid white;
+            border-radius: 5px;
+            font-size: 12px;
+        }
+
+        .btn-primary:hover{
+            background-color: #fff;
+            color: #383cc1;
+            border: #383cc1 solid 1px;
+        }
+    
+
+</style>
+<body>
+    <div>
+        <h2 class="imp-imp-label">A basic form in HTML </h2>
+
+        <form action="">
+            <label class="imp-label" for="name">Name</label>
+            <input type="text" id="name">
+        
+            <label class="email" for="email">Email</label>
+            <input type="text" id="email">
+        
+            <button class="btn-primary" data-tooltip="Tooltip" type="submit">submit</button>
+        </form>
+    </div>
+    
+</body>
+</html>
