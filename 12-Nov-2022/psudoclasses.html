@@ -13,7 +13,7 @@
     }
 
     /* before psudo selector */
-        .imp-label:hover:before{
+        .imp-label:hover::before{
             content: '';
             display: block;
             width: 20px;
@@ -21,20 +21,35 @@
             border-radius: 10px;
             background-color: orange;
         }
+
     /* after psudo selector */
+        .imp-imp-label::after{
+            content: '';
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            background-color: orange;
+        }
+
+    
 
 </style>
 <body>
     <div>
+        <h2 class="imp-imp-label" >A basic form in HTML </h2>
+
         <form action="">
             <label class="imp-label" for="name">Name</label>
             <input type="text" id="name">
         
-            <label class="imp-imp-label" for="email">Email</label>
+            <label for="email">Email</label>
             <input type="text" id="email">
         
             <button data-tooltip="Tooltip" type="submit">submit</button>
         </form>
     </div>
+    
 </body>
 </html>
