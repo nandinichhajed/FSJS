@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Relative</title>
+</head>
+<style>
+    .col{
+        border: 1px solid black;
+        display: inline-block;
+        height: 70px;
+        width: 70px;
+        text-align: center;
+        border-radius: 7px;
+        padding: 5px;
+    }
+    #three{
+        position: relative;
+        top: 10px;
+        right: 10px;
+    }
+</style>
+<body>
+    <div class="col">one</div>
+    <div class="col">two</div>
+    <div class="col" id="three">three</div>
+    <div class="col">four</div>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Absolute</title>
+</head>
+<style>
+    .col{
+        width: 70px;
+        height: 70px;
+        border: 1px solid black;
+        border-radius: 7px;
+        display: inline-block;
+        text-align: center;
+    }
+
+    #three{
+        position: absolute;
+        /* top: 10px; */
+        /* bottom: 10px; */
+        right: 10px;
+        /* left: 10px; */
+    }
+</style>
+<body>
+    <div class="col">one</div>
+    <div class="col">two</div>
+    <div class="col" id="three">three</div>
+    <div class="col">four</div>
+</body>
+</html>
