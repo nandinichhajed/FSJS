@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    /* The box-sizing property allows us to include the padding and border in an element's total width and height. */
+    box-sizing: border-box;
+    background-color: #F9F5ED;
+}
+
+nav{
+    padding: 20px 10%;
+    height: 15vh;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    /* gap: 50px; */
+    align-items: center;
+}
+
+nav ul li {
+    list-style: none;
+    margin-right: 5%;
+    font-weight: 500;
+}
+
+/* css for main section */
+main{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10%;
+}
+
+.leftmain{
+    width: 40%;
+}
+
+.leftmain h1 {
+    font-size: 70px;
+}
+
+.leftmain p{
+    margin: 5% 0;
+}
+
+button{
+    padding: 15px 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: #3b855b;
+    color: #fff;
+}
+
+.rightmain{
+    width: 60%;
+    margin-left: 10%;
+}
+
+.rightmain img{
+    padding: 3px;
+}
