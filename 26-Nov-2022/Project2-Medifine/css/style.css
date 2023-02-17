@@ -101,17 +101,20 @@ main section{
 
 .greenbox{
     width: 35%;
-    bottom: 30px;
+    bottom: 45px;
+    margin-right: 25px;
+
 }
 
 .yellowbox{
     width: 30%;
-    bottom: 50px;
+    bottom: 75px;
+    /* margin-right: 35px; */
 }
 
 .doctor{
     position: absolute;
-    right: 0;
+    right: 25px;
     bottom: 0;
     height: 90%;
 }
