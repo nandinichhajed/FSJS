@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 1440px;
+    background-color: #F0F4F5;
+    margin: auto; /* horizontally center the element within its container. */
+    overflow: hidden;
+}
+
+nav{
+    height: 15vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5%;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+nav ul li{
+    list-style: none;
+    margin-right: 50px;
+    font-weight: 600;
+}
+
+nav ul li:first-child{
+    color: #20bc7e;
+}
+
+/* CSS for main section */
+
+/* leftmain */
+main{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 85vh;
+}
+
+main section{
+    width: 50%;
+}
+
+.leftmain{
+    margin: 5%;
+    position: relative;
+}
+
+.topangle{
+    width: 25px;
+}
+
+.leftmain h1{
+    font-size: 70px;
+}
+
+.leftmain p {
+    color: #808080;
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+.bottomangle{
+    width: 25px;
+    position: absolute;
+    right: 25px;
+}
+
+.stethoscope{
+    position: absolute;
+    width: 90%;
+    top: -60px;
+    right: -25px;
+    z-index: -1;
+}
+
+.leftmain button{
+    color: white;
+    background-color: #20bc7e;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 40px;
+    font-size: 25px;
+}
+
+/* rightmain */
+.greenbox, .yellowbox{
+    position: absolute;
+    right: 0;
+}
+
+.greenbox{
+    width: 35%;
+    bottom: 30px;
+}
+
+.yellowbox{
+    width: 30%;
+    bottom: 50px;
+}
+
+.doctor{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 90%;
+}
