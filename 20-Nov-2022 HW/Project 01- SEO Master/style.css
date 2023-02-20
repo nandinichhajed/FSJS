@@ -1,0 +1,115 @@
+/* You can not modify anything in the HTML */
+/* You can only modify the CSS file */
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin: auto;
+    overflow: hidden;
+}
+
+/* navbar */
+
+.container{
+    height: 15vh;
+}
+
+.navbar-container{
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
+    align-items: center;
+    margin: 2rem 6rem 3rem 6rem;
+    /* border: 1px solid red; */
+}
+
+.navbar-container > div > img{
+    width: 100px;
+    align-items: center;
+    /* border: 1px solid red; */
+}
+
+.button-group{
+    position: relative;
+    left: 1037px;
+}
+
+.nav-button{
+    color: #fff;
+    border: solid 1px;
+    background-color: #5955b3;
+    border-radius: 10px;
+    padding: 18px 28px;
+    font-weight: bold;
+}
+
+.list{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style-type: none;
+    position: relative;
+    left: 30px;
+    /* border: 1px solid red; */
+}
+
+.list-item{
+    margin: 0 15px;
+    color: #7e7e7e;
+    /* border: 1px solid red; */
+}
+
+.list-item:first-child{
+    color: #000000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* main section */
+.banner{
+    height: 85vh;
+}
+
+.banner-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    /* border: 1px solid red; */
+    margin: 0 0 6rem 6rem;
+}
+
+.heading-text{
+    color: #3c2f60;
+    font-size: 60px;
+    padding: 30px 0;
+}
+
+span{
+    color: #5955b3;
+}
+
+.description{
+    color: #7e7e7e;
+    padding: 30px 0;
+}
+
+.btn{
+    margin: 30px 0;
+    padding: 20px 38px;
+}
