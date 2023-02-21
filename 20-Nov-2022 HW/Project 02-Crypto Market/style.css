@@ -1,2 +1,65 @@
 /* You can not modify anything in the HTML */
 /* You can only modify the CSS file */
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin: auto;
+    overflow: hidden;
+}
+
+.navbar{
+    height: 7vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #fff;
+    background-color: #000;
+    /* margin-right: 5rem; */
+}
+
+.logo{
+    width: 80px;
+    margin-left: 5rem;
+}
+
+.line{
+    height: 40px;
+    border: #fff solid .5px;
+    margin-left: 3rem;
+}
+
+.list{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style-type: none;
+    justify-content: space-between;
+    /* border: #fff 1px solid; */
+    margin-left: 1rem;
+}
+
+/* .list-item:first-child::after{
+    content: url(./assets/down-arrow.png);
+    width: 5px;
+    color: #fff;
+} */
+
+.list-item{
+    padding: 0 2rem;
+}
+
+.button-small{
+    color: #fff;
+    padding: 10px 20px ;
+    border-radius: 8px;
+    border: #000;
+    background-color: #ba0cc5;
+    position: relative;
+    left: 65.3rem;
+}
