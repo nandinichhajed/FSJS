@@ -43,9 +43,10 @@ body{
     align-items: center;
     list-style-type: none;
     justify-content: space-between;
-    /* border: #fff 1px solid; */
     margin-left: 1rem;
 }
+
+/* #TODO: Drop down */
 
 /* .list-item:first-child::after{
     content: url(./assets/down-arrow.png);
@@ -60,12 +61,14 @@ body{
 
 .button-small{
     color: #fff;
-    padding: 10px 20px ;
+    padding: 12px 22px ;
     border-radius: 8px;
     border: #000;
     background-color: #ba0cc5;
     position: relative;
-    left: 65.3rem;
+    left: 60rem;
+    font-weight: 600;
+
 }
 
 
