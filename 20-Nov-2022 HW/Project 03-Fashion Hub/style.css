@@ -18,10 +18,14 @@
     align-items: center;
     justify-content: space-between;
     font-family: sans-serif;
-    margin: 4rem 8rem;
+    margin: 0 8rem;
     margin-bottom: 0;
     padding: 6rem 0;
     /* border: 1px solid red; */
+}
+
+.navbar-container > div > img{
+    width: 9rem;
 }
 
 .list{
@@ -34,14 +38,14 @@
 
 .list-item{
     padding: 1rem 2rem;
-    font-size: 27px;
+    font-size: 20px;
     font-weight: 550;
     /* border: 1px solid red; */
 }
 
 .list-item:first-child{
     text-decoration: underline;
-    font-size: 32px;
+    font-size: 25px;
     font-weight: 9500;
     color: #000;
 }
@@ -58,10 +62,10 @@
 }
 
 .nav-button{
-    font-size: 27px;
+    font-size: 25px;
     font-weight: 400;
-    padding: 10px 50px;
-    border: 4px solid black;
+    padding: 10px 40px;
+    border: 3px solid black;
     background-color: #fff;
     border-radius: 15px;
     text-align: center;
@@ -82,37 +86,39 @@
 
 .globe{
     position: absolute;
-    top: 17rem;
-    left: 67rem;
+    top: 10rem;
+    left: 60rem;
     /* border: 1px solid red; */
 }
 
 div > img[alt="person-hero-iamge"]{
     position: absolute;
-    right: 86rem;
-    top: 19.5rem;
+    left: 8rem;
+    top: 13rem;
+    width: 27%;
 }
 
 .square{
     position: absolute;
-    top: 40rem;
-    left: 21.5rem;
+    top: 30rem;
+    left: 18rem;
 }
 
 .star{
     display: flex;
     flex-direction: row;
     position: absolute;
-    top: 31%;
-    right: 7%;
+    top: 22%;
+    right: 8%;
+    width: 65px;
     /* border: 1px solid red; */
 }
 
 .star:nth-child(2){
     position: absolute;
-    top: 91%;
+    top: 85%;
     left: 42%;
-    width: 55px;
+    width: 45px;
 }
 
 
@@ -121,9 +127,9 @@ div > img[alt="person-hero-iamge"]{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    position: absolute;
-    right: 2rem;
-    /* bottom: 1px; */
+    position: relative;
+    left: 20rem;
+    bottom: 66px;
     width: 60%;
     font-family: sans-serif;
     /* border: 1px solid red; */
@@ -131,8 +137,8 @@ div > img[alt="person-hero-iamge"]{
 
 .hero-heading{
     /* position: relative; */
-    font-size: 6rem;
-    padding: 3rem 3rem 2rem 3rem;
+    font-size: 88px;
+    padding: 3rem 0rem 2rem 0rem;
     font-family: sans-serif;
     /* border: 1px solid red; */
 }
@@ -141,7 +147,7 @@ div > img[alt="person-hero-iamge"]{
     font-size: 20px;
     padding-top: 2rem;
     padding-bottom: 6rem;
-    margin: 0 17rem;
+    margin: 0 6rem;
     text-align: center;
     font-family: sans-serif;
     /* border: 1px solid red; */
@@ -173,8 +179,8 @@ div > img[alt="person-hero-iamge"]{
 .contact-heading{
     /* border: 1px solid red; */
     text-align: center;
-    padding-top: 7rem;
-    padding-bottom: 1rem;
+    padding-top: 6rem;
+    /* padding-bottom: 1rem; */
     font-size: 24px;
 }
 
@@ -183,8 +189,9 @@ div > img[alt="person-hero-iamge"]{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    /* border: 1px solid red; */
 }
 
 .icons > span{
-    padding: 1rem;
+    padding: 1rem 1rem;
 }
