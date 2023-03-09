@@ -47,16 +47,29 @@ body{
 }
 
 /* #TODO: Drop down */
+.list-item:first-child{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    /* border: #fff solid 1px; */
+}
 
-/* .list-item:first-child::after{
-    content: url(./assets/down-arrow.png);
-    width: 5px;
-    color: #fff;
-} */
+.list-item:first-child::after{
+    content: url(./assets/12.svg);
+    padding: 0;
+    margin-top: 7px;
+    margin-left: 5px;
+    /* border: #fff solid 1px; */
+
+    /* padding: 0 3rem; */
+}
 
 .list-item{
     padding: 0 2rem;
     font-weight: 600;
+    /* border: #fff solid 1px; */
+
 }
 
 .button-small{
