@@ -1,5 +1,5 @@
 body{
-    width: 1440px;
+    /* width: 1440px; */
     margin: 0;
     padding: 0;
     outline: 0;
@@ -42,24 +42,22 @@ nav{
 }
 
 .list-items2{
-    padding: 0 1.5rem;
+    padding: 0 3rem;
+    /* border: #fff solid 1px; */
 }
 
 .list-items2:nth-child(2){
     padding-right: 0;
 }
 
-/* TODO: Svg dropdown icon */
+.svg-dropdown{
+    position: absolute;
+    z-index: 1;
+    margin-left: 5.5rem;
+}
 
-/* .list-items2:first-child::after{
-    content: url(../Assets/Icons/dropdown.svg);
-} */
-
-/* TODO: btn-pink-bg */
-
-/* .list-items2:nth-child(2)::before{
-    content: url(../Assets/Icons/btn-pink-bg.svg);
+.pink-button-nav{
     position: absolute;
     z-index: -1;
-    border: #fff solid 1px;
-} */
+    margin-left: 9.5rem;
+}
