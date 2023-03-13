@@ -61,3 +61,23 @@ nav{
     z-index: -1;
     margin-left: 9.5rem;
 }
+
+/* main section */
+/* right section */
+.right{
+    width: 50%;
+    /* margin-left: 10rem; */
+    padding: 0;
+    /* border: #fff solid 1px; */
+}
+
+.backcards{
+    position: absolute;
+    padding: 0;
+}
+
+.frontcards{
+    margin-top: 5rem;
+    margin-left: 12.7rem;
+    padding: 0;
+}
