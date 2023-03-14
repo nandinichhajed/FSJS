@@ -1,3 +1,5 @@
+    <!-- Tip: use flexbox and create mobile first and then go for the bigger -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,32 +10,32 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-[#2C2C32] mx-[21.5rem] text-justify">
-    <!-- Tip: use flexbox and create mobile first and then go for the bigger -->
-    <nav class="text-white border-solid border border-white">
-        <!-- logo:Rendered size:1024 × 1024 px Rendered aspect ratio:1∶1 -->
-        <div class="flex items-center content-center">
+
+    <nav class="text-white">
+
+        <div class="flex items-center content-center justify-between">
 
             <!-- Visual Studio Code -->
             <a href="/" class="flex items-center content-center">
                 <img src="./img/vscode.svg" alt="vscode-logo">
-                <span>Visual Studio Code</span>
+                <span class="px-[1rem]">Visual Studio Code</span>
             </a>
 
             <!-- nav list -->
-            <ul class="flex items-center content-center">
-                <li>Doc's</li>
-                <li>Updates</li>
-                <li>Blog</li>
-                <li>API</li>
-                <li>Extensions</li>
-                <li>FAQ</li>
-                <li>Learn</li>
+            <ul class="flex items-center content-center mr-[6.2rem]">
+                <li class="px-[1rem]">Doc's</li>
+                <li class="px-[1rem]">Updates</li>
+                <li class="px-[1rem]">Blog</li>
+                <li class="px-[1rem]">API</li>
+                <li class="px-[1rem]">Extensions</li>
+                <li class="px-[1rem]">FAQ</li>
+                <li class="px-[1rem]">Learn</li>
             </ul>
             
             <!-- search bar -->
             <label class="flex items-center content-center bg-[#525257] h-[50px] text-white pl-[15px] py-[17px] w-[183px]">
                 <img class="pr-[15px]" src="./img/search.svg" alt="search-image">
-                <input class="bg-[#525257] outline-none text-white w-[183px]" type="search" name="search" placeholder="Search Docs">
+                <input class="bg-[#525257] outline-none text-white w-[130px]" type="search" name="search" placeholder="Search Docs">
             </label>
 
             <!-- download button -->
