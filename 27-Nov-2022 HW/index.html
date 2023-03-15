@@ -8,32 +8,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Visual Studio Code - Code Editing. Redefined</title>
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
 </head>
 <body class="bg-[#2C2C32] mx-[21.5rem] text-justify">
 
-    <nav class="bg-[#2C2C32] text-white font-['Segoe UI','Helvetica Neue','Helvetica',Arial,sans-serif] fixed top-0">
-        <!-- border-solid border border-white -->
-        <div class="flex items-center content-center justify-between">
+    <nav class="bg-[#2C2C32] text-white font-['Segoe UI','Helvetica Neue','Helvetica',Arial,sans-serif] fixed top-0 right-0 left-0 border-solid border border-white">
+
+        <div class="flex items-center content-center justify-between h-[50px] lg:mx-[21.5rem] border-solid border border-blue-500">
+            <!-- navbar content except buttons -->
+            <div class="flex items-center content-center">
 
             <!-- Visual Studio Code -->
             <a href="/" class="flex items-center content-center">
                 <img src="./img/vscode.svg" alt="vscode-logo">
-                <span class="px-[1rem] text-[20px]">Visual Studio Code</span>
             </a>
 
+            <p class="text-[20px] px-[10px]">Visual Studio Code</p>
+
             <!-- nav list -->
-            <ul class="flex items-center content-center opacity-60 text-[16px]">
-                <li class="px-[10px]">Doc's</li>
-                <li class="px-[10px]">Updates</li>
-                <li class="px-[10px]">Blog</li>
-                <li class="px-[10px]">API</li>
-                <li class="px-[10px]">Extensions</li>
-                <li class="px-[10px]">FAQ</li>
-                <li class="px-[10px]">Learn</li>
+            <ul class="flex items-center content-center text-[16px]">
+                <li class="px-[10px] opacity-60 hover:opacity-100">
+                    <a href="#">Docs</a>
+                </li>
+
+                <li class="px-[10px] opacity-60 hover:opacity-100"> 
+                    <a href="#">Updates</a>
+                </li>
+
+                <li class="px-[10px] opacity-60 hover:opacity-100"> 
+                    <a href="#">Blog</a>
+                </li>
+
+                <li class="px-[10px] opacity-60 hover:opacity-100"> 
+                    <a href="#">API</a>
+                </li>
+
+                <li class="px-[10px] opacity-60 hover:opacity-100"> 
+                    <a href="#">Extensions</a>
+                </li>
+
+                <li class="px-[10px] opacity-60 hover:opacity-100"> 
+                    <a href="#">FAQ</a>
+                </li>
+
+                <li class="px-[10px] opacity-60 hover:opacity-100"> 
+                    <a href="#">Learn</a>
+                </li>
             </ul>
             
+            </div>
+
+            <!-- buttons -->
+            <div class="flex items-center content-center">
             <!-- search bar -->
-            <label class="flex items-center content-center bg-[#525257] h-[50px] text-white pl-[15px] py-[17px] w-[183px]  ml-[9.7rem]">
+            <label class="flex items-center content-center bg-[#525257] h-[50px] text-white pl-[15px] py-[17px] w-[183px]">
                 <img class="pr-[15px]" src="./img/search.svg" alt="search-image">
                 <input class="bg-[#525257] outline-none text-white w-[130px]" type="search" name="search" placeholder="Search Docs">
             </label>
@@ -43,13 +88,12 @@
                 <img class="pr-[15px]" src="./img/download.svg" alt="download-icon">
                 <button>Download</button>
             </label>
-
+            </div>
+            
+            <div class="hamburger lg:hidden">
+                <i class="fa-sharp fa-solid fa-bars text-lg"></i>
+            </div>
         </div>
     </nav>
-    <div>
-    <div class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro deleniti placeat eaque nobis commodi provident aspernatur nihil sint neque nam odio iure, eligendi nisi pariatur nulla consectetur ratione id voluptatibus magnam! Asperiores error libero eveniet placeat, nulla veniam maiores, voluptatem, tempora accusamus dolor assumenda ipsam consequatur nesciunt. Ad possimus praesentium explicabo dolores eos, rerum voluptatibus. Suscipit ullam magni, odit ratione reiciendis sapiente consectetur rerum earum iure illum cum accusantium similique facere inventore voluptates, eveniet illo expedita neque voluptatem aut. Sit dignissimos sapiente delectus, obcaecati amet libero ratione ad architecto laudantium vel ducimus reiciendis praesentium voluptate sint veniam velit non, eligendi doloribus magnam, reprehenderit iure cum ea! Rerum excepturi, doloremque vero sunt quibusdam adipisci libero odit eius pariatur ipsum totam ducimus nam, expedita qui praesentium natus neque officia odio error repudiandae tempora maiores. Tempore fugiat ad quisquam facere? Beatae aut culpa porro pariatur, perspiciatis nulla, aperiam fuga possimus facilis eius necessitatibus quod veniam repudiandae obcaecati distinctio id ipsa accusamus. Unde, animi dolor, error ipsam ipsa ullam magni omnis placeat consectetur distinctio quas nemo culpa deleniti corrupti iste autem provident, cupiditate aliquid repellendus. Minima aperiam, porro illo harum qui aut pariatur minus totam quam recusandae architecto magnam quia assumenda provident quae ullam, incidunt nisi ad. Facere, velit reiciendis! Tempore ipsa quibusdam sint debitis dolores quis atque pariatur dolorem enim aperiam, consectetur temporibus perferendis cupiditate praesentium veritatis nesciunt nemo! Magnam vel aut, dolores commodi id necessitatibus rerum eveniet veritatis ipsa sed illum repudiandae soluta recusandae nisi minima, numquam nobis nostrum provident facere natus dicta tempora laborum! Sunt magni sit veritatis beatae assumenda, sequi error, provident dolor voluptatem doloremque ab hic itaque minus tenetur qui magnam. Modi cumque, quia deserunt hic labore accusantium voluptates, totam iste praesentium eveniet dolorem corporis qui deleniti ad ea vero ducimus similique fuga animi quasi. Numquam dolorum optio obcaecati aliquam eveniet ipsam fuga, inventore mollitia modi possimus libero vero eligendi? Repellendus, optio adipisci eligendi commodi veniam error sapiente quas voluptatem officia ex ratione exercitationem repellat nam provident perspiciatis nesciunt illo? Cum aut error consequuntur possimus voluptates optio quas, ad itaque delectus a? Sunt voluptate temporibus in rem sint officiis numquam optio totam, molestiae cupiditate nobis similique deleniti repellendus alias eligendi nisi nam perferendis? Laborum error accusantium fuga adipisci ducimus voluptatibus? Perspiciatis quod, deserunt molestiae aperiam repudiandae minima ipsum velit id, fuga, ullam maiores suscipit eius nobis ea ducimus ut quidem vitae quae cupiditate magni distinctio enim. Ducimus laborum veritatis, inventore fugiat amet dignissimos praesentium, quas dolores ea deleniti eaque est sunt adipisci dolor magnam ad ab nisi temporibus! Assumenda tempora incidunt atque dolorum vel inventore sunt repellendus impedit molestias nulla veniam dignissimos facere facilis beatae provident eos ipsum laborum velit at, officia alias nihil iure suscipit! Mollitia vero velit optio sed praesentium aliquid dignissimos magni ipsa expedita, ratione necessitatibus voluptatem, cumque repellat amet omnis dolores harum nobis tempore laudantium impedit vel quis? Ad fuga repellat eius placeat porro velit asperiores laudantium aspernatur, sit quae tempora esse ipsum fugit, ratione reprehenderit rem sapiente quasi quo, distinctio sequi quibusdam at est laborum! Officiis amet dolorem suscipit quas consequatur perferendis facilis? Laborum saepe ratione provident repudiandae, illum autem quibusdam inventore sed voluptatem, quis culpa officiis. Perferendis incidunt assumenda blanditiis alias deleniti dicta dignissimos? Animi ullam iusto natus ut magni, odio nostrum pariatur autem beatae dignissimos aperiam earum! Repudiandae consequuntur inventore quibusdam perferendis.</div>
-
-    <div class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum omnis quisquam sunt natus ad! Asperiores doloremque, obcaecati dolorum rem maxime quo itaque porro adipisci deserunt aperiam optio illum aliquid illo quaerat laborum! Accusamus id expedita iste non delectus rerum reprehenderit ex ut temporibus neque, iusto facilis, vero dolorum enim quaerat, ducimus dignissimos sapiente laboriosam totam suscipit harum? Provident fuga maiores quis obcaecati necessitatibus? Facilis, saepe tempora placeat, sit voluptate suscipit repellendus unde omnis perferendis corrupti, aut eveniet numquam? Natus sunt placeat vel iure exercitationem velit, numquam quas dolore. Quia eos sit eaque soluta nisi quod quam modi praesentium asperiores, at incidunt ex sequi expedita? Molestiae quasi magnam corrupti quas nesciunt repudiandae neque totam ad, labore accusamus, rerum pariatur provident voluptatem praesentium natus beatae, quia et cumque? Nam placeat ipsum fuga laborum eligendi, praesentium, culpa distinctio cumque laboriosam blanditiis pariatur eaque magni neque. Molestiae dolores enim non id similique eos quam, facilis animi ea laborum placeat voluptatum neque ex quia reiciendis. Itaque ea, sunt, veritatis iure fugit quos vitae facilis, totam et error fugiat cum. Cumque animi sapiente blanditiis officiis laboriosam deserunt, corrupti adipisci dolorum! Explicabo aliquid, quam harum reprehenderit nihil nisi? Alias blanditiis a iusto. Ipsam iste quasi accusamus non fuga, aut quidem esse, unde quam voluptatum corporis? Alias, reprehenderit repellendus modi facere consectetur consequatur laboriosam expedita aut, voluptas voluptates sapiente reiciendis similique id harum cupiditate maxime hic praesentium soluta. Iste asperiores nostrum vel dignissimos velit similique fugiat quam delectus nobis ad reprehenderit nesciunt ea quia sequi aliquid amet saepe illum ab enim officia harum consectetur, dolorum sunt odit! Officiis, accusantium recusandae voluptate suscipit est beatae quod sed hic veniam, quibusdam, eum iste incidunt aperiam quisquam aspernatur inventore itaque. In vitae numquam voluptatum, illo alias, aliquam quisquam accusamus architecto magni nobis qui reprehenderit, tempore voluptate! Cum laboriosam nisi, quisquam similique expedita labore vel accusamus a ut impedit cupiditate distinctio culpa velit maiores ipsum voluptas excepturi sed, iste dolor magni ex? Accusamus, vero? Suscipit rem blanditiis unde, quos placeat, repellat, adipisci impedit ipsum nostrum illum minus repellendus reiciendis voluptatibus consequuntur accusamus non fugit eligendi. Corrupti, repellendus? Quas ducimus doloremque, tempora dolorum nobis distinctio possimus vero quia, a vel quaerat fugit ipsum laborum maxime corrupti atque ipsa! Provident quas quo nostrum et velit doloremque nesciunt unde sed porro quisquam distinctio minus vitae sint, obcaecati exercitationem eos similique natus. Sequi molestiae voluptates suscipit harum ut a laborum enim dolorem voluptatibus ad quisquam modi nihil ex ipsam, mollitia error laudantium quaerat? Quaerat tenetur, possimus ducimus necessitatibus aperiam qui ullam eaque consectetur maxime enim placeat soluta. Necessitatibus aliquam, dolor sed rem repellat tempore dolorum deleniti praesentium. Dolorum dicta, optio ut perferendis debitis laboriosam itaque, quisquam doloribus nesciunt eaque, accusamus ea enim perspiciatis commodi tempora maiores sit reiciendis quaerat facere quo soluta. Illum dolor et eveniet fugiat, in natus sequi dolorum repellendus aliquam at repudiandae, dolorem a. Voluptatum expedita aut dicta pariatur error. Quidem est aliquid, voluptas ea sint optio! Eum voluptas id veritatis in ratione illum accusantium eos sapiente modi, reprehenderit totam ab laudantium at molestiae alias explicabo. Dolorum saepe distinctio quam, vel dignissimos laudantium quod ratione doloremque, rem fugiat sunt id pariatur aut ea sequi modi numquam ipsum animi architecto amet aliquid perspiciatis? Iusto debitis quae eaque, minima, ipsam nulla, dolor facere explicabo quaerat itaque minus qui dolorum doloremque hic voluptates praesentium ipsa omnis.</div>
-</div>
 </body>
 </html>
