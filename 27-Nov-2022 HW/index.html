@@ -27,11 +27,11 @@
     />
 
 </head>
-<body class="bg-[#2C2C32] mx-[21.5rem] text-justify">
+<body class="bg-[#2C2C32]">
 
     <nav class="bg-[#2C2C32] text-white font-['Segoe UI','Helvetica Neue','Helvetica',Arial,sans-serif] fixed top-0 right-0 left-0 border-solid border border-white">
 
-        <div class="flex items-center content-center justify-between h-[50px] lg:mx-[21.5rem] border-solid border border-blue-500">
+        <div class="flex items-center content-center justify-between h-[50px] md:mx-[21.5rem] mx-[2rem]">
             <!-- navbar content except buttons -->
             <div class="flex items-center content-center">
 
@@ -43,7 +43,7 @@
             <p class="text-[20px] px-[10px]">Visual Studio Code</p>
 
             <!-- nav list -->
-            <ul class="flex items-center content-center text-[16px]">
+            <ul class="hidden md:flex items-center content-center">
                 <li class="px-[10px] opacity-60 hover:opacity-100">
                     <a href="#">Docs</a>
                 </li>
@@ -76,9 +76,9 @@
             </div>
 
             <!-- buttons -->
-            <div class="flex items-center content-center">
+            <div class="hidden md:flex items-center content-center">
             <!-- search bar -->
-            <label class="flex items-center content-center bg-[#525257] h-[50px] text-white pl-[15px] py-[17px] w-[183px]">
+            <label class="flex items-center content-center bg-[#525257] h-[50px] text-white md:pl-[15px] md:py-[17px] md:w-[183px]">
                 <img class="pr-[15px]" src="./img/search.svg" alt="search-image">
                 <input class="bg-[#525257] outline-none text-white w-[130px]" type="search" name="search" placeholder="Search Docs">
             </label>
@@ -90,10 +90,13 @@
             </label>
             </div>
             
-            <div class="hamburger lg:hidden">
-                <i class="fa-sharp fa-solid fa-bars text-lg"></i>
+            <div class="hamburger md:hidden">
+                <i class="fa-sharp fa-solid fa-bars text-lg "></i>
             </div>
         </div>
+
     </nav>
+
+
 </body>
 </html>
