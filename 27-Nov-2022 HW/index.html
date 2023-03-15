@@ -31,7 +31,7 @@
 
     <nav class="bg-[#2C2C32] text-white font-['Segoe UI','Helvetica Neue','Helvetica',Arial,sans-serif] fixed top-0 right-0 left-0 border-solid border border-white">
 
-        <div class="flex items-center content-center justify-between h-[50px] md:mx-[21.5rem] mx-[2rem]">
+        <div class="flex items-center content-center justify-between h-[50px] mx-[2rem] lg:mx-[6rem]">
             <!-- navbar content except buttons -->
             <div class="flex items-center content-center">
 
@@ -40,35 +40,34 @@
                 <img src="./img/vscode.svg" alt="vscode-logo">
             </a>
 
-            <p class="text-[20px] px-[10px]">Visual Studio Code</p>
-
+            <p class="text-[20px] md:text-[16px] md:px-[10px] lg:text-[18px]">Visual Studio Code</p>
             <!-- nav list -->
             <ul class="hidden md:flex items-center content-center">
-                <li class="px-[10px] opacity-60 hover:opacity-100">
+                <li class="md:text-[12px] lg:text-[14px] md:px-[6px] lg:px-[10px] opacity-60 hover:opacity-100">
                     <a href="#">Docs</a>
                 </li>
 
-                <li class="px-[10px] opacity-60 hover:opacity-100"> 
+                <li class="md:text-[12px] lg:text-[14px] md:px-[6px] lg:px-[10px] opacity-60 hover:opacity-100"> 
                     <a href="#">Updates</a>
                 </li>
 
-                <li class="px-[10px] opacity-60 hover:opacity-100"> 
+                <li class="md:text-[12px] lg:text-[14px] md:px-[6px] lg:px-[10px] opacity-60 hover:opacity-100"> 
                     <a href="#">Blog</a>
                 </li>
 
-                <li class="px-[10px] opacity-60 hover:opacity-100"> 
+                <li class="md:text-[12px] lg:text-[14px] md:px-[6px] lg:px-[10px] opacity-60 hover:opacity-100"> 
                     <a href="#">API</a>
                 </li>
 
-                <li class="px-[10px] opacity-60 hover:opacity-100"> 
+                <li class="md:text-[12px] lg:text-[14px] md:px-[6px] lg:px-[10px] opacity-60 hover:opacity-100"> 
                     <a href="#">Extensions</a>
                 </li>
 
-                <li class="px-[10px] opacity-60 hover:opacity-100"> 
+                <li class="md:text-[12px] lg:text-[14px] md:px-[6px] lg:px-[10px] opacity-60 hover:opacity-100"> 
                     <a href="#">FAQ</a>
                 </li>
 
-                <li class="px-[10px] opacity-60 hover:opacity-100"> 
+                <li class="md:text-[12px] lg:text-[14px] md:px-[6px] lg:px-[10px] opacity-60 hover:opacity-100"> 
                     <a href="#">Learn</a>
                 </li>
             </ul>
@@ -77,16 +76,22 @@
 
             <!-- buttons -->
             <div class="hidden md:flex items-center content-center">
+
             <!-- search bar -->
-            <label class="flex items-center content-center bg-[#525257] h-[50px] text-white md:pl-[15px] md:py-[17px] md:w-[183px]">
-                <img class="pr-[15px]" src="./img/search.svg" alt="search-image">
-                <input class="bg-[#525257] outline-none text-white w-[130px]" type="search" name="search" placeholder="Search Docs">
+            <label class="flex items-center content-center bg-[#525257] h-[50px] text-white 
+                        md:pl-[15px] md:py-[17px] md:w-[45px]"> 
+                        <!-- original [183px] -->
+
+                <img class="pr-[15px] lg:w-[35px]" src="./img/search.svg" alt="search-image">
+                <input class="hidden bg-[#525257] outline-none text-white w-[130px]" 
+                                type="search" name="search" placeholder="Search Docs">
             </label>
 
             <!-- download button -->
-            <label class="flex items-center content-center bg-[#1C5BA4] h-[50px] text-white px-[20px] py-[17px]">
-                <img class="pr-[15px]" src="./img/download.svg" alt="download-icon">
-                <button>Download</button>
+            <label class="flex items-center content-center bg-[#1C5BA4] h-[50px] text-white px-[22px] py-[17px]">
+                <img class="md:pr-[5px] md:w-[20px]" src="./img/download.svg" alt="download-icon">
+
+                <button class="md:text-[14px] lg:text-[16px]">Download</button>
             </label>
             </div>
             
