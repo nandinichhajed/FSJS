@@ -31,7 +31,7 @@
 
     <nav class="bg-[#2C2C32] text-white font-['Segoe UI','Helvetica Neue','Helvetica',Arial,sans-serif] fixed top-0 right-0 left-0 border-solid border border-white">
 
-        <div class="flex items-center content-center justify-between h-[50px] mx-[2rem] lg:mx-[6rem]">
+        <div class="flex items-center content-center justify-between h-[50px] mx-[2rem] lg:mx-[3rem]">
             <!-- navbar content except buttons -->
             <div class="flex items-center content-center">
 
@@ -95,10 +95,13 @@
 
             <!-- search bar -->
             <label class="flex items-center content-center bg-[#525257] h-[50px] text-white 
-                        md:pl-[15px] md:py-[17px] md:w-[45px] xl:w-[183px]"> 
+                        md:pl-[15px] md:py-[17px] md:w-[45px] 
+                        lg:bg-[#2C2C32]
+                        xl:w-[183px]"> 
                         <!-- original  -->
 
-                <img class="pr-[15px] lg:w-[35px] xl-pr-[15px] xl:w-[33px]" src="./img/search.svg" alt="search-image">
+                <img class="pr-[15px] lg:w-[35px] lg:opacity-60
+                            xl-pr-[15px] xl:w-[33px]" src="./img/search.svg" alt="search-image">
                 <input class="hidden bg-[#525257] outline-none text-white w-[130px] xl:block" 
                                 type="search" name="search" placeholder="Search Docs">
             </label>
