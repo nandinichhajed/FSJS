@@ -1,3 +1,15 @@
+/*
+=> Data Types
+=> Varibales and typeof
+=> Date
+=> Loops
+=> Conditions
+=> OP
+=> Indexing
+=> Math
+=> Objecy and  Array
+*/
+
 // Conditions
 
 // If Else
