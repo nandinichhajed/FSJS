@@ -65,19 +65,8 @@
 // console.log(Array.isArray(num1));
 // console.log(Array.isArray(num));
 
-// Join
-// let Arr1 = [1, 2, 3, 4, 5, 6, 7];
-// let var1 = Arr1.join(' 1 ');
-// console.log(var1);
-// console.log(typeof var1);
-
-// keys
-// For of
-
 //lastindexof
-
 // let num = [1, 2, 3, 'Anurag', 4, 5, 6, 7, 8, 'Anurag', 'Anurag'];
-
 // console.log(num.indexOf('Anurag'));
 
 // Map
@@ -104,12 +93,10 @@
 
 // unShift
 // let fruit = ['Apple', 'Bada Apple', 'Chota Apple', 'Double Apple'];
-
 // fruit.unshift('Apple 1', 'Grapes 2');
 // console.log(fruit);
 
 // Converting to Array
-
 // let name = 'Anurag';
 // let array1 = name.split('');
 // console.log(array1);
@@ -134,5 +121,8 @@
 //     console.log(i);
 // }
 
-// Array Method in JavaScript and Write a Blog on it => (compulsory)
-
+// Join
+// let Arr1 = [1, 2, 3, 4, 5, 6, 7];
+// let var1 = Arr1.join(' 1 ');
+// console.log(var1);
+// console.log(typeof var1);
