@@ -56,18 +56,18 @@
 // console.log(num.includes(7, 7));
 
 //indexof
-// let num = [1, 2, 3, 'Anurag', 4, 5, 6, 7, 8, 'Anurag', 'Anurag'];
-// console.log(num.indexOf('Anurag'));
+// let num = [1, 2, 3, 'Nandini', 4, 5, 6, 7, 8, 'Nandini', 'Nandini'];
+// console.log(num.indexOf('Nandini'));
 
 // isArray()
-// let num = [1, 2, 3, 'Anurag', 4, 5, 6, 7, 8, 'Anurag', 'Anurag'];
-// let num1 = 'Anurag';
+// let num = [1, 2, 3, 'Nandini', 4, 5, 6, 7, 8, 'Nandini', 'Nandini'];
+// let num1 = 'Nandini';
 // console.log(Array.isArray(num1));
 // console.log(Array.isArray(num));
 
-//lastindexof
-// let num = [1, 2, 3, 'Anurag', 4, 5, 6, 7, 8, 'Anurag', 'Anurag'];
-// console.log(num.indexOf('Anurag'));
+//lastIndexOf
+// let num = [1, 2, 3, 'Nandini', 4, 5, 6, 7, 8, 'Nandini', 'Nandini'];
+// console.log(num.lastIndexOf('Nandini'));
 
 // Map
 // let maths = [1, 4, 9, 16, 25];
@@ -75,7 +75,6 @@
 
 // Pop
 // let maths = [1, 4, 9, 16, 25];
-
 // console.log(maths.pop());
 // console.log(maths);
 
@@ -84,7 +83,7 @@
 // console.log(maths.reverse());
 
 // Shift()
-// let maths = ['Anurag', 1, 4, 9, 16, 25];
+// let maths = ['Nandini', 1, 4, 9, 16, 25];
 // console.log(maths.shift());
 
 // Sort
