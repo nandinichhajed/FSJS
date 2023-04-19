@@ -74,3 +74,32 @@ for (k in obj4){
 
 // all objects cant be loop through
 // if there is a probleme in looping the object its not that the code is bad, it sometimes there is restriction in object that you can not loop through it
+
+// <----------------------- PART - 4 ----------------------->
+const obj5 = {
+    comic: 'marvel',
+    pen: '',
+
+    // this property reffers to the property which are inside my object
+
+    printComic: function() {
+        this.pen = '🖊️🗒️'
+        console.log(this)
+        return this
+    },
+
+    // we can not use this keyword in arrow function as arrowfunction dont have access to this keyword
+    // arrow function dont have contxt of this 
+
+    // printaComic: () => {
+    //     // this.pen = '🖊️🗒️'
+    //     console.log(this)
+    // }
+}
+
+console.log(obj5.printComic());
+// console.log(obj5.printaComic());
+
+// what the first function will return will be taken by second function 
+// if we want second method to have access to all the properties thats why we return this 
+console.log(obj5.printComic().printComic().printComic());
