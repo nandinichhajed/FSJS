@@ -75,6 +75,7 @@ for (k in obj4){
 // all objects cant be loop through
 // if there is a probleme in looping the object its not that the code is bad, it sometimes there is restriction in object that you can not loop through it
 
+
 // <----------------------- PART - 4 ----------------------->
 const obj5 = {
     comic: 'marvel',
