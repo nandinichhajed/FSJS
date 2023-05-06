@@ -8,10 +8,15 @@
 </head>
 <body>
     <h1>heading</h1>
-    <p>Lorem ipsum dolor sit amet.</p>
+    <p class="fsjs" id="fsjs2"><span>Lorem</span> ipsum dolor sit amet.</p>
     <ul>
         <li>one</li>
         <li>two</li>
+    </ul>
+    <ul>
+        <li class="tag">JavaScript</li>
+        <li class="tag">ReactJS</li>
+        <li class="tag">NodeJS</li>
     </ul>
     <script>
         // console.log("hello")
@@ -20,7 +25,36 @@
         // console.log(document.documentElement)
         // console.log(document.head)
         // console.log(document.body)
-        console.log(document.body.firstElementChild)
+        // console.log(document.body.firstElementChild)
+        
+        // getElementById
+        // let val = document.getElementById("fsjs2")
+        // console.log(val.innerText);
+        // console.log(val.innerHTML);
+
+        // getElementsByClassName
+        // let val = document.getElementsByClassName("tag")
+        // console.log(val);
+        // console.log(val[0].innerText);
+        // console.log(val[1].innerText);
+        // val[1].innerHTML = "Nandini"
+        // val[2].innerText = "<h1>Nandini is great</h1>"
+        
+        // getElementsByTagName
+        const list = document.getElementsByTagName("UL")[0];
+        list.getElementsByTagName("li")[0].innerHTML = "Milk";
+
+        // Query Selector bt TagName
+        // let h1 = document.querySelector("h1").innerText
+        // console.log(h1);
+
+        // Query Selector bt TagName
+        // let h1 = document.querySelector(".fsjs").innerText
+        // console.log(h1);
+    
+        let h1 = document.querySelector("#fsjs2").innerText
+        console.log(h1);
+    
     </script>
 
 </body>
