@@ -9,9 +9,11 @@
 <body>
     <h1>Heading</h1>
     <ul>
-
     </ul>
+    <button onclick="math()" id="fsjs2">Submit</button>
+    <p id="js"></p>
     <script>
+        // adding element to body - insert inner HTML
         const list = `<li>Nandini</li>
             <li>Nandini</li>
             <li>Nandini</li>
@@ -19,6 +21,52 @@
             `
         const ul = document.querySelector("ul")
         ul.innerHTML = list
+
+        // creating a new element for body - Create Element on Screen
+        let title1 = document.createElement("h1")
+        title1.className = "title1";
+        title1.id = "title1";
+        title1.style.fontSize = "25px";
+        title1.style.color = "green";
+        title1.textContent = "Creating New ";
+        console.log(title1)
+        document.body.appendChild(title1)
+
+        let title = document.createElement("h1")
+        title.className = "title";
+        title.style.fontSize = "25px";
+        title.style.color = "green";
+        title.textContent = "Creating New Element in DOM Day 1";
+        console.log(title)
+        document.body.appendChild(title)
+
+        // Remove Child => Assignment
+        let node = document.getElementById("title1");
+        if (node.parentNode) {
+            node.parentNode.removeChild(node);
+        }
+
+        // For loop
+        for (let i = 0; i < 3; i++) {
+            let pra = document.createElement("p")
+            pra.className = "FSJS";
+            pra.style.fontSize = "16px"
+            console.log(pra)
+            pra.textContent = i;
+            document.body.appendChild(pra)
+        }
+
+        function math(){
+            let value = prompt("solve this 50 - 20")
+            if (value == 30){
+                document.getElementById("js").innerText = "Success Redirect"
+                document.getElementById("fsjs2").style.backgroundColor = "green"
+            } else {
+                document.getElementById("js").innerText = "Failed Try Again"
+                document.getElementById("fsjs2").style.backgroundColor = "red"
+            }
+        }
+
     </script>
 </body>
 </html>
