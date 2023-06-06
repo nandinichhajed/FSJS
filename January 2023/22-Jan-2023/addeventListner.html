@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Listenear</title>
+</head>
+<body>
+    <h1>learning event listener</h1>
+    <p id="js">learning js</p>
+    <p id="py">learning py</p>
+    <p id="cpp">learning c++</p>
+
+    <iframe id="vdo" src=""></iframe>
+
+    <p id="docs"></p>
+
+
+    <script>
+        // Click
+        document.addEventListener("click", clic)
+        function clic(){
+            document.getElementById("js").innerHTML = "this is single click"
+        }
+        // dblclick
+        document.addEventListener("dblclick", hello)
+        function hello(){
+            document.getElementById("js").innerText = "double click"
+        }
+
+        // mouseenter
+        document.addEventListener("mouseenter", new_function)
+        function new_function(){
+            document.getElementById("js").innerHTML = "Mouse Enter"
+        }
+
+        // mouseleave
+        document.addEventListener("mouseleave", mouse_leave)
+        function mouse_leave(){
+            document.getElementById("js").innerHTML = "your mouse left you"
+        }
+
+        // moveover
+        document.addEventListener("mouseover", mouseOver);
+
+        function mouseOver() {
+          document.getElementById("py").style.color = "red";
+        }
+        
+        // TODO: input
+
+        // keydown - The user presses a key
+        document.addEventListener("keydown", keyDown);
+        function keyDown() {
+            document.getElementById("py").style.backgroundColor = "green";
+        }
+
+        // keyup - The user releases a key
+        document.addEventListener("keyup", keyUp);
+        function keyUp() {
+            document.getElementById("cpp").style.backgroundColor = "blue";
+        }
+
+        // keypress
+        document.addEventListener("keypress", keyPress);
+        function keyPress() {
+            document.getElementById("cpp").style.backgroundColor = "blue";
+        }
+
+        // onload
+        
+        document.getElementById("vdo").addEventListener("load", myFunction);
+
+        function myFunction() {
+          document.getElementById("docs").innerHTML = "Iframe is loaded.";
+        }
+    </script>
+</body>
+</html>
